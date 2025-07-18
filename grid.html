@@ -5,7 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/layout.css">
+    
     <style>
+        
+#box-1 a:hover{
+    background-color: rgb(78, 186, 215);
+    box-shadow: 50px 50px 70px;
+}
+        #box-1 a {
+            text-align: center;
+            color: rgb(22, 83, 20);
+            font-size: 2em;
+
+            
+        }
+
         .container {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -16,8 +31,8 @@
         #box-1 {
             border: 2px solid tomato;
             border-radius: 10px;
-            background-image: url(styles/images/I.jpg);
-            background-size: cover;
+            background-image: url(styles/images/PXL_20250430_030522141.jpg);
+            background-size: contain;
             /* or contain, or 100% 100% */
             background-repeat: no-repeat;
             background-position: center;
@@ -41,7 +56,7 @@
 
         .box {
             background-color: gray;
-            
+
         }
 
         #box-11 {
@@ -55,27 +70,35 @@
         #box-1 {
             grid-row: span 5;
         }
-
-    
     </style>
 </head>
 
 <body>
-    <!-- .container>.box#box-$*12{Box - $} -->
-    <div class="container">
-        <div class="box" id="box-1">Box - 1</div>
-        <div class="box" id="box-2">Box - 2</div>
-        <div class="box" id="box-3">Box - 3</div>
-        <div class="box" id="box-4">Box - 4</div>
-        <div class="box" id="box-5">Box - 5</div>
-        <div class="box" id="box-6">Box - 6</div>
-        <div class="box" id="box-7">Box - 7</div>
-        <div class="box" id="box-8">Box - 8</div>
-        <div class="box" id="box-9">Box - 9</div>
-        <div class="box" id="box-10">Box - 10</div>
-        <div class="box" id="box-11">Box - 11</div>
-        <div class="box" id="box-12">Box - 12</div>
-    </div>
+    <section class="navi">
+        <nav>
+            <ul class="multi">
+                <li><a href="index.html">home</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="image.html">image</a></li>
+            </ul>
+        </nav>
+        <!-- .container>.box#box-$*12{Box - $} -->
+        <div class="container">
+            <div class="box" id="box-1">
+                <h1><a href="https://www.facebook.com/96.shohag">MOMENUR RASHID</a></h1>
+            </div>
+            <div class="box" id="box-2">Box - 2</div>
+            <div class="box" id="box-3">Box - 3</div>
+            <div class="box" id="box-4">Box - 4</div>
+            <div class="box" id="box-5">Box - 5</div>
+            <div class="box" id="box-6">Box - 6</div>
+            <div class="box" id="box-7">Box - 7</div>
+            <div class="box" id="box-8">Box - 8</div>
+            <div class="box" id="box-9">Box - 9</div>
+            <div class="box" id="box-10">Box - 10</div>
+            <div class="box" id="box-11">Box - 11</div>
+            <div class="box" id="box-12">Box - 12</div>
+        </div>
 
 </body>
 

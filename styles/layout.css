@@ -1,0 +1,120 @@
+.header,
+.nav,
+.main,
+.sidebar,
+.advertising,
+.footer {
+    background-color: bisque;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    padding: 5px;
+}
+.multi{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    background-color: aquamarine;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.advertising {
+    grid-area: advertising;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.cointainer {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "header header header header"
+        "nav main main sidebar"
+        "nav main main advertising"
+        "footer footer footer footer"
+    ;
+}
+
+@media screen and (max-width: 576px) {
+
+    .header,
+    .nav,
+    .main,
+    .sidebar,
+    .advertising,
+    .footer {
+        background-color: rgba(8, 19, 53, 0.212);
+        border: 2px solid rgb(51, 180, 46);
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .cointainer {
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "main main main main"
+            "sidebar sidebar sidebar sidebar"
+            "advertising advertising advertising advertising"
+            "footer footer footer footer"
+        ;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+
+
+    .header,
+    .nav,
+    .main,
+    .sidebar,
+    .advertising,
+    .footer {
+        background-color: rgba(184, 182, 46, 0.725);
+        border: 2px solid rgb(51, 180, 46);
+        border-radius: 5px;
+        padding: 5px;
+    }
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+    li {
+        list-style: none;
+    }
+
+    .cointainer {
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "sidebar main main main"
+            "sidebar main main main"
+            "advertising footer footer footer"
+        ;
+    }
+
+}
